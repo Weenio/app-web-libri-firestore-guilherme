@@ -22,14 +22,33 @@
 
     </body>
 
-    // IMPORT DO SDK DO FIREBASE
+    <!-- IMPORT DO SDK DO FIREBASE -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
 
-    // IMPORT DO SDK DO FIRESTORE
+    <!-- IMPORT DO SDK DO FIRESTORE -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 
-    //Dados de acesso ao firebase 
-    <script></script>
+    <!-- Dados de acesso ao firebase  -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA7K6y2vLgeXV840U1fJ4oN7kIf-XFdjg8",
+            authDomain: "teste2-atv-guilherme.firebaseapp.com",
+            projectId: "teste2-atv-guilherme",
+            storageBucket: "teste2-atv-guilherme.appspot.com",
+            messagingSenderId: "395058698021",
+            appId: "1:395058698021:web:43ed6ca2059b5913c8accc",
+            measurementId: "G-XBF0VP437K"
+          };
+
+        /*Inicia o firebase*/
+
+        firebase.initializeApp(firebaseConfig);
+        /*Inicia o firestore database*/
+        const db = firebase.firestore();
+
+        /*Teste de conexão com o database*/
+        console.log(db);
+    </script>
 
     <script src="app.js"></script>
 
